@@ -1,0 +1,41 @@
+<head>
+	<link rel = "stylesheet" href = "style.css">
+	<!-- Latest compiled and minified CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+<img src="SS.png" alt="Solar System" usemap="#SSMap" id = "SS" onclick="showCoords(event)">
+
+<map name="SSMap">
+<!--  href keeps the mouse pointer changing as it passes over -->
+  <area shape="circle" coords="385,547,50" alt="mercury" data-bs-toggle="offcanvas" data-bs-target="#mercury" href = "#">
+ <area shape="circle" coords="517,485,50" alt="venus" href="#">
+ <area shape="circle" coords="674,401,50" alt="earth" href="#">
+ <area shape="circle" coords="779,304,50" alt="mars" href="#">
+</map>
+
+<div class="offcanvas offcanvas-end" id="mercury">
+  <div class="offcanvas-header">
+    <h1 class="offcanvas-title">Mercury</h1>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+  </div>
+  <div class="offcanvas-body">
+    <p>Mercury is a hot planet, with a surface temperature of about 800&deg;</p>
+    <p>Mercuy is named after the messenger of the gods, who was known for his speed.  This is due to his speedy orbit.</p>
+  </div>
+</div>
+
+<script>
+	console.log(document.getElementById("SS").clientHeight);
+
+	function showCoords(event)
+	{
+		alert(event.pageX + " " + event.pageY);
+	}
+
+
+</script>
+</body>
