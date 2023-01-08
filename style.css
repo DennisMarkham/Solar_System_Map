@@ -3,3 +3,16 @@ img
 	width: 2000px;
 	margin-right: 200px;
 }
+
+.offcanvas-body, .offcanvas-header
+{
+	color: white;
+	background-color: black;
+}
+
+
+/*this doesn't seem to do anything*/
+.planetImage
+{
+	left-margin: 20px;
+}
