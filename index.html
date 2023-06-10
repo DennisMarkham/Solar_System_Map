@@ -12,20 +12,55 @@
 <map name="SSMap">
 <!--  href keeps the mouse pointer changing as it passes over -->
   <area shape="circle" coords="385,547,50" alt="mercury" data-bs-toggle="offcanvas" data-bs-target="#mercury" href = "#">
- <area shape="circle" coords="517,485,50" alt="venus" href="#">
- <area shape="circle" coords="674,401,50" alt="earth" href="#">
- <area shape="circle" coords="779,304,50" alt="mars" href="#">
+ <area shape="circle" coords="517,485,50" alt="venus"  data-bs-toggle="offcanvas" data-bs-target="#venus" href="#">
+ <area shape="circle" coords="674,401,50" alt="earth" data-bs-toggle="offcanvas" data-bs-target="#earth" href="#">
+ <area shape="circle" coords="779,304,50" alt="mars" data-bs-toggle="offcanvas" data-bs-target="#earth" href="#">
 </map>
 
 <div class="offcanvas offcanvas-end" id="mercury">
   <div class="offcanvas-header">
     <h1 class="offcanvas-title">Mercury</h1>
-    <img src = "mercury.png" class = "planetImage">
+    <img src = "planets/mercury.png" class = "planetImage">
     <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
   </div>
   <div class="offcanvas-body">
     <p>Mercury is a hot planet, with a surface temperature of about 800&deg;</p>
     <p>Mercuy is named after the messenger of the gods, who was known for his speed.  This is due to his speedy orbit.</p>
+  </div>
+</div>
+
+<div class="offcanvas offcanvas-end" id="venus">
+  <div class="offcanvas-header">
+    <h1 class="offcanvas-title">Venus</h1>
+    <img src = "planets/venus.png" class = "planetImage">
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+  </div>
+  <div class="offcanvas-body">
+    <p>Venus is a hot planet, with a surface temperature of about 900&deg;, hotter than mercury!  Though its further from the son, greenhouse gases trap heat.</p>
+    <p>Venus is named after the Roman goddess of beauty.  I guess they thought it was pretty.</p>
+  </div>
+</div>
+
+<div class="offcanvas offcanvas-end" id="earth">
+  <div class="offcanvas-header">
+    <h1 class="offcanvas-title">Earth</h1>
+    <img src = "planets/earth.png" class = "planetImage">
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+  </div>
+  <div class="offcanvas-body">
+    <p>You probably know a lot about Earth because you live here.</p>
+    <p>The wettest planet in the Solar System, about 70% water!</p>
+  </div>
+</div>
+
+<div class="offcanvas offcanvas-end" id="mars">
+  <div class="offcanvas-header">
+    <h1 class="offcanvas-title">Mars</h1>
+    <img src = "planets/mars.png" class = "planetImage">
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+  </div>
+  <div class="offcanvas-body">
+    <p>Mars is the red planet, thus named after the Roman god of war.</p>
   </div>
 </div>
 
